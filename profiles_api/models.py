@@ -50,4 +50,4 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         """Return String Representation of our User"""
-        return str(self.name)
+        return f'{self.name} :: {self.email}'
